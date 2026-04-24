@@ -15,7 +15,7 @@ locCode = "HRBIP" # location code of hydrophone, HRBIP is the code for Holyrood
 # initialize onc
 onc = ONC(token,outPath = saveDir)
 
-# audio data downsampling and download parameters
+# audio data product download parameters
 params = {
     "deviceCategoryCode": "HYDROPHONE",
     "dataProductCode": "AD", # data product code for audio data
