@@ -24,7 +24,7 @@ def download_hydro_data(locCode):
     hour_start = date_now.floor('h') - pd.Timedelta(hours=1)
     hour_end = date_now.floor('h') + pd.Timedelta(hours=1)
 
-    # format search times as strings compatible with ONC's API's expeted format
+    # format search times as strings compatible with ONC's API's expected format
     start_date = str(hour_start.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + "Z")
     end_date = str(hour_end.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + "Z")
 
